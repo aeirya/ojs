@@ -99,6 +99,7 @@
 
 	<div class="row">
 		<div class="main_entry">
+			{call_hook name="Templates::Article::MainEntry"}
 
 			{if $publication->getData('authors')}
 				<section class="item authors">

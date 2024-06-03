@@ -34,6 +34,8 @@ class IssueEntryForm extends FormComponent
     /** @copydoc FormComponent::$method */
     public $method = 'PUT';
 
+    public $publication;
+
     /**
      * Constructor
      *
@@ -48,6 +50,7 @@ class IssueEntryForm extends FormComponent
     {
         $this->action = $action;
         $this->locales = $locales;
+        $this->publication = $publication;
 
         // Issue options
         $issueOptions = [['value' => '', 'label' => '']];

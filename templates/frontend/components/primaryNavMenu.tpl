@@ -49,6 +49,14 @@
 						</a>
 					</li>
 				{/if}
+				{* {if true} *}
+					{* <li>
+						<a href="{url router=\PKP\core\PKPApplication::ROUTE_PAGE page="about" op="editorialTeam"}">
+							{translate key="about.editorialTeam"}
+							hey!
+						</a>
+					</li> *}
+				{* {/if} *}
 				<li>
 					<a href="{url router=\PKP\core\PKPApplication::ROUTE_PAGE page="about" op="submissions"}">
 						{translate key="about.submissions"}

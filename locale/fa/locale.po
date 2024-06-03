@@ -1594,13 +1594,13 @@ msgid "about.history"
 msgstr "تاریخچه مجله"
 
 msgid "about.editorialTeam"
-msgstr "تیم سردبیری"
+msgstr "هیئت تحریریه"
 
 msgid "about.editorialTeam.biography"
 msgstr "بیوگرافی"
 
 msgid "about.editorialPolicies"
-msgstr "سیاست‌های تیم سردبیری"
+msgstr "سیاست‌های هیئت تحریریه"
 
 msgid "about.focusAndScope"
 msgstr "زمینه مطالعاتی"
