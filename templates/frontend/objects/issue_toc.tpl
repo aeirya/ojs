@@ -130,7 +130,7 @@
 		{if $section.articles}
 			{if $section.title}
 				<{$heading}>
-					{$section.title|escape}
+					{translate key={"custom.section.{$section.title}"}|escape}
 				</{$heading}>
 			{/if}
 			<ul class="cmp_article_list articles">
