@@ -26,6 +26,7 @@ namespace APP\issue;
 use APP\core\Application;
 use APP\facades\Repo;
 use APP\file\PublicFileManager;
+use APP\plugins\util\Utils;
 use PKP\core\Core;
 use PKP\facades\Locale;
 use PKP\submission\PKPSubmission;
@@ -135,7 +136,16 @@ class Issue extends \PKP\core\DataObject
      */
     public function getYear()
     {
-        return $this->getData('year');
+        $year = $this->getData('year');
+        return Utils::formatYear($year);
+    }
+
+    public function &getData($key, $default = null) {
+        if ($key != 'year' && $key != 'showYear') {
+            return parent::getData($key, $default);
+        }
+        $year = parent::getData($key, $default);
+        return Utils::formatYear($year);
     }
 
     /**
@@ -420,7 +430,8 @@ class Issue extends \PKP\core\DataObject
      */
     public function getShowYear()
     {
-        return $this->getData('showYear');
+        $year = $this->getData('showYear');
+        return Utils::formatYear($year);
     }
 
     /**
